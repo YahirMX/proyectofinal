@@ -15,4 +15,13 @@
 //    return view('welcome');
 //});
 
-Route::get('/', 'StoreController@index');
+Route::get('/', [
+    'as'    => 'home',
+    'uses'  => 'StoreController@index'
+]);
+
+
+Route::get('product/{slug}', [
+    'as'    => 'product-detail',
+    'uses'  => 'StoreController@show'
+]);
