@@ -90,3 +90,17 @@ img {
 {
     margin-bottom: 0;
 }
+
+/* Carrito*/
+.table-cart
+{
+    background: #fff;
+    border-radius: 1em;
+    margin-bottom: 30px;
+    padding: 1em;
+}
+
+.table-cart img
+{
+    width: 50px;
+}
