@@ -12,15 +12,7 @@
             <li class="nav-item"><a class="nav-link" href="{{ route('cart-show') }}"><i class="fa fa-shopping-cart"></i></a></li>
             <li class="nav-item"><a class="nav-link" href="">Conocenos</a></li>
             <li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-dropdown nav-link dropdown-toggle" id="navbarDropdownRight" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
-                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownRight">
-                    <li class="dropdown-item">
-                        <a style="color:black;" class="nav-link" href="" data-ga-category="Navigation" data-ga-action="Resources" data-ga-label="GitHub project" rel="noopener nofollow" target="_blank">Iniciar Sesión<span class="caret"></span></a>
-                    </li>
-                </ul>
-            </li>
+            @include('store.partials.menu-user')
         </ul>
     </div>
 </nav>

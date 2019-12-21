@@ -59,3 +59,32 @@ Route::get('cart/update/{product}/{quantity?}',[
     'as'    =>  'cart-update',
     'uses'  =>  'CartController@update'
 ]);
+
+// Authentication routes...
+Route::get('auth/login', [
+    'as'    =>  'login-get',
+    'uses'  =>  'HomeController@index'
+]);
+
+Route::post('auth/login', [
+    'as'    =>  'login-post',
+    'uses'  =>  'HomeController@index'
+]);
+Auth::routes();
+Route::get('auth/logout', [
+    'as'    =>  'logout',
+    'uses'  =>  'Auth\LoginController@logout'
+]);
+
+// Registration routes...
+Route::post('auth/register', [
+    'as'    =>  'register-get',
+    'uses'  =>  'Auth\AuthController@getRegister'
+]);
+
+Route::post('auth/register', [
+    'as'    =>  'register-post',
+    'uses'  =>  'Auth\AuthController@postRegister'
+]);
+
+
