@@ -77,14 +77,14 @@ Route::get('auth/logout', [
 ]);
 
 // Registration routes...
-Route::post('auth/register', [
-    'as'    =>  'register-get',
-    'uses'  =>  'Auth\AuthController@getRegister'
-]);
-
-Route::post('auth/register', [
-    'as'    =>  'register-post',
-    'uses'  =>  'Auth\AuthController@postRegister'
-]);
+//Route::post('auth/register', [
+//    'as'    =>  'register-get',
+//    'uses'  =>  'Auth\AuthController@getRegister'
+//]);
+//
+//Route::post('auth/register', [
+//    'as'    =>  'register-post',
+//    'uses'  =>  'Auth\AuthController@postRegister'
+//]);
 
 
