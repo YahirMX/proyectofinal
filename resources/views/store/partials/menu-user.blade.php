@@ -18,6 +18,9 @@
             <li class="dropdown-item">
                 <a style="color:black;" class="nav-link" href="{{ route('login-get') }}" >Iniciar Sesión<span class="caret"></span></a>
             </li>
+            <li class="dropdown-item">
+                <a style="color:black;" class="nav-link" href="{{ route('register') }}" >Registrar cuenta<span class="caret"></span></a>
+            </li>
         </ul>
     </li>
     @endif
