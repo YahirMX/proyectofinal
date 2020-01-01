@@ -59,6 +59,12 @@ Route::get('cart/update/{product}/{quantity?}',[
     'as'    =>  'cart-update',
     'uses'  =>  'CartController@update'
 ]);
+//verifica que este autenticado para que pueda pasar a la vista de detalles
+Route::get('order-detail',[
+    'middleware' => 'auth',
+    'as'    =>  'order-detail',
+    'uses'  =>  'CartController@orderDetail'
+]);
 
 // Authentication routes...
 Route::get('auth/login', [

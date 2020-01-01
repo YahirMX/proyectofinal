@@ -11,7 +11,7 @@
  Target Server Version : 50724
  File Encoding         : 65001
 
- Date: 01/01/2020 16:53:43
+ Date: 01/01/2020 18:29:11
 */
 
 SET NAMES utf8mb4;
@@ -141,7 +141,7 @@ CREATE TABLE `users`  (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `users_email_unique`(`email`) USING BTREE,
   UNIQUE INDEX `users_user_unique`(`user`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of users
@@ -150,8 +150,9 @@ INSERT INTO `users` VALUES (1, 'Daniel', 'Angel', 'daniel30081990@gmail.com', 'D
 INSERT INTO `users` VALUES (2, 'Ruth', 'Angel', 'ruth@gmail.com', 'ruth', NULL, '$2y$10$JERIluu1Q92/jMuhRC05eecgxQUV3nOdkS5uDg6FmzNeDWcU.sddW', 'user', 1, 'Zulia, Venezuela', NULL, '2019-12-17 03:17:00', '2019-12-17 03:17:00');
 INSERT INTO `users` VALUES (3, 'prueba', 'apeprueba', 'prueba@gmail.com', 'pruebageek', NULL, '$2y$10$epx6/2M1y3Ddods4uwrMAu4rQd9JgBYn0wTXQSpK0DF6vJXB9SIMO', 'user', NULL, NULL, NULL, '2019-12-25 03:37:14', '2019-12-25 03:37:14');
 INSERT INTO `users` VALUES (5, 'prueba', 'apeprueba', 'prueba2@gmail.com', 'prueba2Geek', NULL, '$2y$10$SN9TILCO4GSnOvkEnVihuOZ5G2defU16i41lczBsMel7KyKDZEyKS', 'user', NULL, NULL, NULL, '2019-12-25 03:47:56', '2019-12-25 03:47:56');
-INSERT INTO `users` VALUES (6, 'prueba3', 'app3', 'prueba3@gmail.com', 'ap3', NULL, '$2y$10$Bjoo3vvwF/NdgW3LUZ.e..sf1Z3wpWKOXsAMbQiJ.fBeL9JiGvHtu', 'user', NULL, NULL, NULL, '2019-12-25 03:55:13', '2019-12-25 03:55:13');
-INSERT INTO `users` VALUES (7, 'p3', 'p3', 'prueba4@gmail.com', 'p3', NULL, '$2y$10$7zGPgVF0ZN.OvMZMuWG39uaqkDiIaDp7UGvQE4JwARmyIWv76Xs/a', 'user', NULL, NULL, NULL, '2019-12-25 04:05:18', '2019-12-25 04:05:18');
-INSERT INTO `users` VALUES (8, 'p4', 'p4', 'prueba5@gmail.com', 'p4', NULL, '$2y$10$AnzG/xQunbKDNuwgYJ40EelYNWOwkizje7GymEAg.A5CsO1SjdD5W', 'user', NULL, NULL, NULL, '2019-12-25 04:09:19', '2019-12-25 04:09:19');
+INSERT INTO `users` VALUES (6, 'prueba3', 'app3 apellido', 'prueba3@gmail.com', 'ap3', NULL, '$2y$10$Bjoo3vvwF/NdgW3LUZ.e..sf1Z3wpWKOXsAMbQiJ.fBeL9JiGvHtu', 'user', NULL, NULL, NULL, '2019-12-25 03:55:13', '2019-12-25 03:55:13');
+INSERT INTO `users` VALUES (7, 'p4 nombre', 'p4 apellido', 'prueba4@gmail.com', 'p4', NULL, '$2y$10$7zGPgVF0ZN.OvMZMuWG39uaqkDiIaDp7UGvQE4JwARmyIWv76Xs/a', 'user', NULL, NULL, NULL, '2019-12-25 04:05:18', '2019-12-25 04:05:18');
+INSERT INTO `users` VALUES (8, 'p5 nombre', 'p5 apellido', 'prueba5@gmail.com', 'p5', NULL, '$2y$10$AnzG/xQunbKDNuwgYJ40EelYNWOwkizje7GymEAg.A5CsO1SjdD5W', 'user', NULL, NULL, NULL, '2019-12-25 04:09:19', '2019-12-25 04:09:19');
+INSERT INTO `users` VALUES (9, 'p5 nombre', 'p5ap', 'p5@gmail.com', 'p6', NULL, '$2y$10$NUUMH1CPGHxFY8CKS1ZsNeH1WVWYPI2ZP0t3.8bvYunWumixXNERu', 'user', NULL, NULL, NULL, '2020-01-01 19:54:40', '2020-01-01 19:54:40');
 
 SET FOREIGN_KEY_CHECKS = 1;
