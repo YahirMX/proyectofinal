@@ -14,12 +14,12 @@ class ProductTableSeeder extends Seeder
     {
         $data = array(
             [
-                'name' 			=> 'Bicicleta 1',
-                'slug' 			=> 'bicicleta-1',
-                'descripcion' 	=> 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellendus doloribus molestias odio nisi! Aspernatur eos saepe veniam quibusdam totam.',
-                'extract' 		=> 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                'name' 			=> 'LLANTA 15"',
+                'slug' 			=> 'LLANTA-15',
+                'descripcion' 	=> 'Neumático de alto rendimiento para carretera.',
+                'extract' 		=> '225/45 R17',
                 'price' 		=> 275.000,
-                'image' 		=> 'https://www.oxfordstore.cl/media/catalog/product/cache/1/image/1200x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm2015-drako-20-grafito-2020-01.jpg',
+                'image' 		=> 'https://www.google.com/imgres?q=LLANTA%2015&imgurl=https%3A%2F%2Fcdn1.coppel.com%2Fimages%2Fcatalog%2Fpm%2F5305223-1.jpg&imgrefurl=https%3A%2F%2Fprodperfauthtienda.coppel.com%2Fllanta-goodyear-185-65-rin-15-pm-5305223&docid=jpHPhrOHe4eIFM&tbnid=1B5Vy797b3VQ2M&vet=12ahUKEwjKr6fEhYaKAxV0_skDHeuiFSwQM3oECG4QAA..i&w=1600&h=1280&hcb=2&ved=2ahUKEwjKr6fEhYaKAxV0_skDHeuiFSwQM3oECG4QAA',
                 'visible' 		=> 1,
                 'created_at' 	=> new DateTime,
                 'updated_at' 	=> new DateTime,

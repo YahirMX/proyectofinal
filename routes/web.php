@@ -1,19 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
 // función anónima para obtener los datos del producto según el slug que se le pasa y que coincida con el 1ro encontrado
 Route::bind('product', function($slug){
@@ -53,6 +40,10 @@ Route::get('cart/trash', [
     'as'    =>  'cart-trash',
     'uses'  =>  'CartController@trash'
 ]);
+Route::get('/productos', function () {
+    return view('productos');
+});
+
 
 //actualizar cantidad
 Route::get('cart/update/{product}/{quantity?}',[
@@ -82,15 +73,6 @@ Route::get('auth/logout', [
     'uses'  =>  'Auth\LoginController@logout'
 ]);
 
-// Registration routes...
-//Route::post('auth/register', [
-//    'as'    =>  'register-get',
-//    'uses'  =>  'Auth\AuthController@getRegister'
-//]);
-//
-//Route::post('auth/register', [
-//    'as'    =>  'register-post',
-//    'uses'  =>  'Auth\AuthController@postRegister'
-//]);
+
 
 
